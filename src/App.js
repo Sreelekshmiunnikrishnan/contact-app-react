@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header></Header>
        <Router>
-        <Routes>
+        <Routes basename={process.env.PUBLIC_URL}>
         <Route path ="/" element={<ContactList></ContactList>}></Route>
         <Route path ="/create" element={<CreateContact></CreateContact>}></Route>
         <Route path ="/edit" element={<EditContact></EditContact>}></Route>
