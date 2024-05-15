@@ -12,9 +12,9 @@ function App() {
       <Header></Header>
        <Router>
         <Routes basename={process.env.PUBLIC_URL}>
-        <Route path ="/" element={<ContactList></ContactList>}></Route>
-        <Route path ="/create" element={<CreateContact></CreateContact>}></Route>
-        <Route path ="/edit" element={<EditContact></EditContact>}></Route>
+       <Route path="/" element={<ContactList />} />
+          <Route path="/create" element={<CreateContact />} />
+          <Route path="/edit/:id" element={<EditContact />} />
         </Routes>
       </Router>
   </div>
