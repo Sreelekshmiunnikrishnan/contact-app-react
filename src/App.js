@@ -9,8 +9,9 @@ import ContactList from './components/ContactList';
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+     
        <Router>
+    <Header></Header>
         <Routes>
           {/* Homepage - Contact List */}
          <Route path="/contact-app-react/" element={<ContactList />} />
