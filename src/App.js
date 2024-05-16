@@ -9,13 +9,12 @@ import ContactList from './components/ContactList';
 function App() {
   return (
     <div className="App">
-     
+      <Header></Header>
        <Router>
+         <Routes>
    
-        <Routes>
-    <Header></Header>
           {/* Homepage - Contact List */}
-         <Route path="/contact-app-react/" element={<ContactList />} />
+         <Route path="contact-app-react/" element={<ContactList />} />
 
 
           {/* Route for creating a new contact */}
