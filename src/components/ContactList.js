@@ -22,7 +22,7 @@ function ContactList() {
   return e.id;
     }).indexOf(id);
     users.splice(index,1);
-    history("contact-app-react/");
+    history("/contact-app-react");
 
    }
     return (
@@ -50,7 +50,7 @@ function ContactList() {
                                         <button className='ui button red' onClick={() => deleteHandler( item.id)}>DELETE</button>
                                     </td>
                                     <td>
-                                        <Link to={"/edit/contact-app-react"}>
+                                        <Link to={"/edit"}>
                                             <button className='ui button yellow' onClick={(e) => setId(item.id,item.Name,item.Email,item.PhoneNumber, item.DateOfBirth)}>EDIT</button>
                                         </Link>
                                     </td></tr>
@@ -60,7 +60,7 @@ function ContactList() {
                     }
 
                 </tbody></Table>
-               <Link className='d-grid gap-2' style={{textDecoration:"none"}} to="/create/contact-app-react">
+               <Link className='d-grid gap-2' style={{textDecoration:"none"}} to="/create">
                   <button className="ui button blue" size="lg" >ADD CONTACT</button>
                </Link>
         </div>
