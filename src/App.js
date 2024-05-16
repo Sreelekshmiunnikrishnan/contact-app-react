@@ -11,8 +11,9 @@ function App() {
     <div className="App">
      
        <Router>
-    <Header></Header>
+   
         <Routes>
+    <Header></Header>
           {/* Homepage - Contact List */}
          <Route path="/contact-app-react/" element={<ContactList />} />
 
