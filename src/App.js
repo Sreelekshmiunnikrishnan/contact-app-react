@@ -13,7 +13,8 @@ function App() {
        <Router>
         <Routes>
           {/* Homepage - Contact List */}
-          <Route path="/" element={<ContactList />} />
+         <Route path="/contact-app-react/" element={<ContactList />} />
+
 
           {/* Route for creating a new contact */}
           <Route path="/create" element={<CreateContact />} />
