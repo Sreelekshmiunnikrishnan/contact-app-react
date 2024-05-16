@@ -1,7 +1,7 @@
 
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import {HashRouter as Router,Routes,Route } from 'react-router-dom';
 import ContactList from './components/ContactList';
  import Header from './components/Header';
  import CreateContact from './components/CreateContact';
@@ -12,7 +12,7 @@ function App() {
       <Header></Header>
       <Router>
         <Routes>
-        <Route path ="/" element={<ContactList></ContactList>}></Route>
+        <Route path ="" element={<ContactList></ContactList>}></Route>
         <Route path ="/create" element={<CreateContact></CreateContact>}></Route>
         <Route path ="/edit" element={<EditContact></EditContact>}></Route>
         </Routes>
