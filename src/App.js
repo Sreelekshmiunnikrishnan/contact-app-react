@@ -11,10 +11,10 @@ function App() {
     <div className="App">
       <Header></Header>
        <Router>
-        <Routes basename={process.env.PUBLIC_URL}>
-       <Route path="/" element={<ContactList />} />
+        <Routes>
+       <Route path="contact-app-react/" element={<ContactList />} />
           <Route path="/create" element={<CreateContact />} />
-          <Route path="/edit/:id" element={<EditContact />} />
+          <Route path="/edit" element={<EditContact />} />
         </Routes>
       </Router>
   </div>
