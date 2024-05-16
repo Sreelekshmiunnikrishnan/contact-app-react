@@ -2,7 +2,7 @@
 import './App.css';
 import React from 'react';
 import {BrowserRouter as Router,Routes,Route } from 'react-router-dom';
-import ContactList from '../components/ContactList';
+import ContactList from './components/ContactList';
  import Header from './components/Header';
  import CreateContact from './components/CreateContact';
  import EditContact from './components/EditContact';
@@ -14,7 +14,7 @@ function App() {
          <Routes>
    
           {/* Homepage - Contact List */}
-         <Route path="contact-app-react/" element={<ContactList />} />
+         <Route path="/" element={<ContactList />} />
 
 
           {/* Route for creating a new contact */}
