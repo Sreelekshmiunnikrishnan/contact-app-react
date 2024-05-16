@@ -44,7 +44,7 @@ function CreateContact() {
                 PhoneNumber: cphno,
                 DateOfBirth: cbday
             })
-            history("/")
+            history("/contact-app-react")
         }
 
     }
@@ -67,7 +67,7 @@ function CreateContact() {
                     <input type="date" name="bday" placeholder="DOB" value={bday} onChange={(e) => setBirthDate(e.target.value)} required /> </div>
                 <div style={{ marginTop: '10px' }}>
                     <button className="ui button blue" onClick={(e) => handleSubmit(e)}>Create Contact</button></div>
-                <Link className="d-grid gap-2" to="/" style={{ marginTop: "20px" }}>
+                <Link className="d-grid gap-2" to="/contact-app-react" style={{ marginTop: "20px" }}>
                     <button className="ui button blue" size="lg">HOME</button>
                 </Link>
             </form>
