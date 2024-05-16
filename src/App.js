@@ -12,7 +12,7 @@ function App() {
       <Header></Header>
       <Router>
         <Routes>
-        <Route path ="/contact-app-react" element={<ContactList></ContactList>}></Route>
+        <Route path ="/" element={<ContactList></ContactList>}></Route>
         <Route path ="/create" element={<CreateContact></CreateContact>}></Route>
         <Route path ="/edit" element={<EditContact></EditContact>}></Route>
         </Routes>
