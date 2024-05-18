@@ -14,14 +14,14 @@ function App() {
          <Routes>
    
           {/* Homepage - Contact List */}
-         <Route path="/" element={<ContactList />} />
+         <Route path="/" element={<ContactList/>} />
 
 
           {/* Route for creating a new contact */}
-          <Route path="/create" element={<CreateContact />} />
+          <Route path="/create" element={<CreateContact/>} />
 
           {/* Route for editing an existing contact */}
-          <Route path="/edit" element={<EditContact />} />
+          <Route path="/edit" element={<EditContact/>} />
         </Routes>
       </Router>
     </div>
