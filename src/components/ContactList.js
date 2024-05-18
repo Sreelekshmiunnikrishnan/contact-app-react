@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import users from './users';
 import { Link, useNavigate } from "react-router-dom";
 
-const ContactList () => {
+const ContactList = () => {
     let history = useNavigate();
     function setId(id,Name,Email,PhoneNumber,DateOfBirth){
         localStorage.setItem("id",id);
