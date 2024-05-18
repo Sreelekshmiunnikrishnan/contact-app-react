@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
+     <ContactList></ContactList>
        <Router>
          <Routes>
    
